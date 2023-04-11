@@ -1,7 +1,9 @@
 <!DOCTYPE html>
+
 <html>
 <head>
 	<title>Cricket Management System</title>
+    <link rel="stylesheet" href="./css/header.css">
 </head>
 <body>
 	<header>
@@ -10,7 +12,7 @@
 				<li><a href="home.php">BCCI</a></li>
 				<li><a href="newplayer.php">New Player</a></li>
 				<li><a href="players.php">Players</a></li>
-				<li><a href="teams.php">Teams</a></li>
+				<li><a href="team.php">Teams</a></li>
 				<li><a href="matchschedule.php">Match Schedule</a></li>
 			</ul>
 			<?php
