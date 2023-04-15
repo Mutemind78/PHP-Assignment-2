@@ -4,8 +4,9 @@ require('shared/header.php');
 ?>
 
 <main>
+    <link rel="stylesheet" href="./css/newplayer.css">
     <h1>New Player Registration</h1>
-    <form method="post" action="success.php">
+    <form method="post" action="success.php" enctype="multipart/form-data">
         <fieldset>
             <label for="name">Name: *</label>
             <input type="text" name="name" id="name" required />
@@ -50,18 +51,25 @@ require('shared/header.php');
             <input type="text" name="username" id="username" required />
         </fieldset>
         <fieldset>
-            <label for="password">Password: *</label>
-            <input type="password" name="password" id="password" required
-                   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" />
-            <img id="imgShowHide" src="img/show.png" alt="Show/Hide"
-                onclick="showHide();" />
+                <label for="password">Password: *</label>
+                <p>Passwords must be a minimum of 8 characters, including 1 digit, 1 upper-case letter, and 1 lower-case letter.</p>
+            <div class="password-wrapper">
+                <input type="password" name="password" id="password" required
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" />
+                 
+            </div>
         </fieldset>
+
         <fieldset>
             <label for="confirm">Confirm Password: *</label>
             <input type="password" name="confirm" id="confirm" required
                 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                 onkeyup="return comparePasswords();" />
             <span id="pwMsg" class="error"></span>
+        </fieldset>
+        <fieldset>
+                <label for="photo">Photo:</label>
+                <input type="file" name="photo" accept=".png,.jpg" />
         </fieldset>
         <button class="btnOffset" onclick="return comparePasswords();">Register</button>
         

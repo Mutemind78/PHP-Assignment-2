@@ -1,0 +1,82 @@
+/* Container */
+h1{
+  text-align: center;
+  color: aliceblue;
+}
+
+body {
+  background-color: #394458;}
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+/* Fieldsets */
+fieldset {
+  margin-bottom: 20px;
+  border: none;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+select {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+select {
+  height: 40px;
+}
+
+/* Password Wrapper */
+.password-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+/* Password Input */
+#password {
+  flex-grow: 1;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* Password Show/Hide Button */
+#imgShowHide {
+  margin-left: -40px;
+  cursor: pointer;
+}
+
+/* Button */
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Button Offset */
+.btnOffset {
+  margin-top: 20px;
+}

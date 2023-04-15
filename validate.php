@@ -26,11 +26,11 @@ else {
         exit();
     }
     else {
-        // if both credentials found, store the user identity in the $_SESSION object as a var
-        // redirect to posts feed
-        // *** code dictation lines go here ***
+       
         session_start(); // access the current session automatically created on the web server
+        $_SESSION['status'] = true;
         $_SESSION['player'] = $username;
+        //print_r($_SESSION);exit;
         header('location:home.php');
         $db = null;
     }

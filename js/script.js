@@ -18,15 +18,15 @@ function comparePasswords() {
 }
 
 function showHide() {
-    const pw = document.getElementById('password');
-    const img = document.getElementById('imgShowHide');
-
-    if (pw.type == 'password') {
-        pw.type = 'text';
-        img.src = 'img/hide.png';
-    }
-    else {
-        pw.type = 'password';
-        img.src = 'img/show.png';
-    }
+  var passwordInput = document.getElementById("password");
+  var imageElement = document.getElementById("imgShowHide");
+  if (passwordInput.type === "password") {
+    passwordInput.type = "text";
+    imageElement.src = "img/hide.png";
+    imageElement.alt = "Hide";
+  } else {
+    passwordInput.type = "password";
+    imageElement.src = "img/show.png";
+    imageElement.alt = "Show";
+  }
 }

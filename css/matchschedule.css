@@ -1,0 +1,76 @@
+/* Add a margin to the top of the table */
+h1 {
+    text-align: center;
+  }
+  
+  table {
+    margin-top: 20px;
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+  }
+  
+  /* Style the table headers */
+  th {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Style the "Team" column header */
+  th:nth-child(5) {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+  }
+  
+  /* Style the table rows */
+  td {
+    border: 1px solid #333;
+    padding: 10px;
+  }
+  
+  /* Alternate row background color for easier reading */
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Style button hover effect */
+  td button:hover {
+    background-color: #333;
+  }
+  
+
+  .add-match-link {
+    margin-top: 20px;
+  }
+  
+  .add-match-link a {
+    background-color:  #1c2331;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-match-link a:hover {
+    background-color: #323a4b;
+  }
+
+  /* match schedule */
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-left: 10em;
+    padding-right: 10em;
+  }
+  
+ 
+  
